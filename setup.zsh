@@ -10,7 +10,11 @@ LW_PATH=lunar
 
 alias s="shuttle"
 alias sr="shuttle run --skip-pull"
+
 alias h="hamctl"
+
+alias gocode="cd lunar/Github"
+
 
 source ~/.zsh-config/git.zsh
 source ~/.zsh-config/go.zsh
