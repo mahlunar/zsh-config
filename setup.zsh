@@ -12,5 +12,6 @@ alias s="shuttle"
 alias sr="shuttle run --skip-pull"
 alias h="hamctl"
 
+source ~/.zsh-config/git.zsh
 source ~/.zsh-config/go.zsh
 source ~/.zsh-config/secret.zsh
