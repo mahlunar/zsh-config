@@ -12,10 +12,10 @@ alias s="shuttle"
 alias sr="shuttle run --skip-pull"
 
 alias h="hamctl"
-
-alias gocode="cd lunar/Github"
-
+alias gocode="cd /Users/martinankerhave/lunar/Github"
+alias bs="eval 'open https://backstage.lunar.tech/'"
 
 source ~/.zsh-config/git.zsh
 source ~/.zsh-config/go.zsh
 source ~/.zsh-config/secret.zsh
+source ~/.zsh-config/docker.zsh
