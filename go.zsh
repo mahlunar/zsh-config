@@ -13,10 +13,17 @@ function gomodgraph() {
 }
 
 function gowtest() {
+    source local.env
     args=${@:-./...}
     nodemon --ext go --ignore "**/vendor/**" -x "gotest "$args" || exit 1"
 }
+
 function gowbuild() {
     args=${@:-cmd/main.go}
+    nodemon --ext go -x "go build $args || exit 1"
+}
+
+function gowbuildall() {
+    args=${@:-./...}
     nodemon --ext go -x "go build $args || exit 1"
 }
