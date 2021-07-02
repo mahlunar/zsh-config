@@ -14,6 +14,7 @@ alias sr="shuttle run --skip-pull"
 alias h="hamctl"
 alias gocode="cd /Users/martinankerhave/lunar/Github"
 alias bs="eval 'open https://backstage.lunar.tech/'"
+alias curl=/usr/local/opt/curl/bin/curl
 
 source ~/.zsh-config/git.zsh
 source ~/.zsh-config/go.zsh
