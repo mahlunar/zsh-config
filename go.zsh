@@ -8,14 +8,31 @@ function gomodgraph() {
         echo 'modgraphviz not found. Installing now...'
         (mkdir /tmp/modgraphviz && go get golang.org/x/exp/cmd/modgraphviz)
     fi
-
+    
     go mod graph | modgraphviz | dot -Tpng | open -f -a /System/Applications/Preview.app
 }
 
-function gowtest() {
+function sourceLocalEnv() {
+    set -a # automatically export all variables
     source local.env
+    set +a
+}
+
+function gowtest() {
+    set -a # automatically export all variables
+    source local.env
+    set +a
+    
     args=${@:-./...}
     nodemon --ext go --ignore "**/vendor/**" -x "gotest "$args" || exit 1"
+}
+
+function gorun() {
+    set -a # automatically export all variables
+    source local.env
+    set +a
+
+    go run cmd/main.go
 }
 
 function gowbuild() {
