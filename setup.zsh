@@ -9,14 +9,12 @@ export LOG_CONSOLE_AS_JSON=false
 
 LW_PATH=lunar
 
-alias curl=/usr/local/opt/curl/bin/curl
-
-source ~/.zsh-config/git.zsh
-source ~/.zsh-config/go.zsh
-source ~/.zsh-config/secret.zsh
-source ~/.zsh-config/docker.zsh
-source ~/.zsh-config/nvm.zsh
-source ~/.zsh-config/completion.zsh
-source ~/.zsh-config/alias.zsh
-source ~/.zsh-config/kubernetes.zsh
-source ~/.zsh-config/mkdocs.zsh
+source ~/zsh-config/git.zsh
+source ~/zsh-config/go.zsh
+source ~/zsh-config/secret.zsh
+source ~/zsh-config/docker.zsh
+source ~/zsh-config/nvm.zsh
+source ~/zsh-config/completion.zsh
+source ~/zsh-config/alias.zsh
+source ~/zsh-config/kubernetes.zsh
+source ~/zsh-config/mkdocs.zsh
