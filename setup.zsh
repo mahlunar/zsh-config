@@ -18,3 +18,4 @@ source ~/zsh-config/completion.zsh
 source ~/zsh-config/alias.zsh
 source ~/zsh-config/kubernetes.zsh
 source ~/zsh-config/mkdocs.zsh
+source ~/zsh-config/ssh.zsh
